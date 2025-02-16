@@ -1,6 +1,7 @@
 {
   "name": "m4mmoth",
   "version": "0.1.0",
+  "homepage": "https://m4mm0th-z3n.github.io/m4mmoth-s-lair",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
