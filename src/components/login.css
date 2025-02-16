@@ -1,0 +1,107 @@
+/* Importation de la police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Style global pour la page */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif; /* Police moderne */
+  background-color: #121212; /* Gris très foncé */
+  color: #e0e0e0; /* Texte en gris clair */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style pour le conteneur du formulaire */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.05); /* Fond semi-transparent plus léger */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  backdrop-filter: blur(20px); /* Effet de flou plus prononcé */
+  text-align: center;
+  width: 300px;
+}
+
+/* Style pour les titres */
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: #e0e0e0;
+}
+
+/* Style pour les labels et inputs */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+input {
+  width: 70%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Bordure très légère */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05); /* Fond semi-transparent plus léger */
+  color: #e0e0e0; /* Texte en gris clair */
+  backdrop-filter: blur(10px); /* Effet de verre dépoli */
+}
+
+input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.2); /* Bordure légèrement plus visible au focus */
+}
+
+/* Style pour le bouton */
+button {
+  width: 70%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+  color: #e0e0e0; /* Texte en gris clair */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(10px); /* Effet de verre dépoli */
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Fond un peu plus clair au survol */
+}
+
+/* Style pour les messages d'erreur */
+p {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  text-align: center; /* Centre le texte */
+}
+
+p.error {
+  color: #ff5252; /* Rouge pour les messages d'erreur */
+}
+
+.message {
+    height: 1.5rem; /* Hauteur fixe pour réserver l'espace */
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    visibility: hidden; /* Masqué par défaut */
+    text-align: center; /* Centre le texte */
+  }
+  
+  .message.visible {
+    visibility: visible; /* Visible lorsque la classe 'visible' est ajoutée */
+  }
+  
+  .error {
+    color: #ff5252; /* Rouge pour les messages d'erreur */
+  }
+  
+  .hint {
+    color: #e0e0e0; /* Gris clair pour le hint */
+  }
